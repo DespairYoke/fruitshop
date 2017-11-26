@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+    <servlet>
+        <servlet-name>action</servlet-name>
+        <servlet-class>web.ActionServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>action</servlet-name>
+        <url-pattern>*.do</url-pattern>
+    </servlet-mapping>
+    
+    
+    <servlet>
+        <servlet-name>loginServlet</servlet-name>
+        <servlet-class>web.Login</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>loginServlet</servlet-name>
+        <url-pattern>/login</url-pattern>
+    </servlet-mapping>
+    
+    
+    <servlet>
+        <servlet-name>registServlet</servlet-name>
+        <servlet-class>web.Regist</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>registServlet</servlet-name>
+        <url-pattern>/regist</url-pattern>
+    </servlet-mapping>
+    
+    
+    
+    <servlet>
+        <servlet-name>updateServlet</servlet-name>
+        <servlet-class>web.Update</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>updateServlet</servlet-name>
+        <url-pattern>/update</url-pattern>
+    </servlet-mapping>
+    
+     <servlet>
+        <servlet-name>searchServlet</servlet-name>
+        <servlet-class>web.searchServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>searchServlet</servlet-name>
+        <url-pattern>/search</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>add_shopperServlet</servlet-name>
+        <servlet-class>web.Add_shopper</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>add_shopperServlet</servlet-name>
+        <url-pattern>/add_shopper</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>pay_servlet</servlet-name>
+        <servlet-class>web.Pay</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>pay_servlet</servlet-name>
+        <url-pattern>/pay</url-pattern>
+    </servlet-mapping>
+</web-app>
